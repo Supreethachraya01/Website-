@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Document</title>
         <link rel="stylesheet" href="Style.css" />
+        <script src="script.js"></script>
     </head>
 
     <body>
@@ -23,21 +24,28 @@
 
         <main>
             <form class="flex-container" action="#" method="post">
-                <label>
-                    <strong> Register: </strong> <input type="text" required />
-                </label>
-                <br />
-                <label class="Date">
-                    <strong>Date of Birth(dd/mm/yyyy):</strong>
-                    <input type="date" class="dat" required />
-                </label>
-                <br />
-                <div class="buttons">
-                    <button type="submit">Get marks</button>
-                    <button type="reset">Clear</button>
-                </div>
+                <fieldset>
+                    <legend><b>ENTER INFORMATION</b></legend>
+                    <label>
+                        <strong> Register: </strong>
+                        <input type="text" required id="js"/>
+                    </label>
+                    <br />
+                    <label class="Date">
+                        <strong>Date of Birth(dd/mm/yyyy):</strong>
+                        <input type="date" class="dat" required />
+                    </label>
+                    <br />
+                    <center>
+                    <div class="buttons">
+                        <button type="submit" onclick="gotonewpage()">Get marks</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                  </center>
+                </fieldset>
             </form>
         </main>
+
 
         <div class="footer">
             <a href="https://www.penmation.blogspot.com">
